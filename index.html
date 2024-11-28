@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+    <title>Given Cunanan - Portfolio</title>
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="container">
+        <img src="images/picture.jpg" alt="Given Cunanan" class="header-img">
+        <h1>Given Cunanan</h1>
+    </div>
+</header>
+
+
+<!-- About Me Section -->
+<section class="about-section">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hello! I'm Given Cunanan, a passionate coder and problem-solver who loves working with technology to create and fix. With a deep interest in software development and computer hardware, I specialize in coding projects that bring ideas to life and troubleshooting issues to restore optimal performance.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <div class="progress-bar" style="width: 95%;"></div>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <div class="skill">
+                <h3>Node.js</h3>
+                <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+            <div class="skill">
+                <h3>Git & GitHub</h3>
+                <div class="progress-bar" style="width: 88%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects-section" class="projects-background">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-item" onclick="showDetails('project1')">
+                <h3>Singing Bee</h3>
+                <img src="images/SingingBee.png" alt="Singing Bee Game">
+            </div>
+            <!-- Project 2 -->
+            <div class="project-item" onclick="showDetails('project2')">
+                <h3>Nics Bakes</h3>
+                <img src="images/NicsBakes.png" alt="Nics Bakes Website">
+            </div>
+            <!-- Project 3 -->
+            <div class="project-item" onclick="showDetails('project3')">
+                <h3>Lakbay Enterprise</h3>
+                <img src="images/Lakbay.png" alt="Lakbay Enterprise">
+            </div>
+        </div>
+
+        <!-- Hidden Project Details -->
+        <div id="project1" class="project-details">
+            <img src="images/SingingBee.png" alt="Singing Bee Game">
+            <h3>Singing Bee</h3>
+            <p>Who Wants To Be A Singing Bee is a console game where you can test your knowledge about your chosen songs by looking for the correct answer of the missing word/s from its lyrics.</p>
+        </div>
+        <div id="project2" class="project-details">
+            <img src="images/NicsBakes.png" alt="Nics Bakes Website">
+            <h3>Nics Bakes</h3>
+            <p>The Food Ordering System is a modern, user-friendly application designed to simplify the process of ordering food. It allows customers to browse through a wide variety of menus, select their preferred items, and place orders with ease, all from the comfort of their homes or offices. With features like secure payment processing, real-time order tracking, and customizable meal options, the system aims to provide a smooth and convenient experience for users. This application not only caters to the needs of customers but also helps restaurants manage orders more efficiently, making it an ideal solution for both food lovers and business owners in the fast-paced food service industry.</p>
+        </div>
+        <div id="project3" class="project-details">
+            <img src="images/Lakbay.png" alt="Lakbay Enterprise">
+            <h3>Lakbay Enterprise</h3>
+            <p>The project aims to develop and implement Lakbay Enterprise, a user-friendly travel itinerary platform designed to assist travelers in planning, managing, and organizing their trips. The platform will offer personalized suggestions for places and activities based on user preferences, making trip planning more efficient and enjoyable.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Information -->
+<section class="contact-info">
+    <div class="container">
+        <h2>Contact Details</h2>
+        <ul>
+            <li><strong>Full Name:</strong> Given Cunanan</li>
+            <li><strong>Email:</strong> cunanangiven077@gmail.com</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-form">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your First Name" required>
+            <input type="text" placeholder="Your Last Name" required>
+            <input type="email" placeholder="Your Email Address" required>
+            <input type="text" placeholder="Your Subject of this Message" required>
+            <textarea placeholder="Say Something About Us" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 GIVEN CUNANAN. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- JavaScript for Project Details -->
+<script>
+    function showDetails(projectId) {
+        // Hide all project details
+        const details = document.querySelectorAll('.project-details');
+        details.forEach(detail => detail.style.display = 'none');
+
+        // Show the clicked project's details
+        const projectDetail = document.getElementById(projectId);
+        projectDetail.style.display = 'block';
+    }
+</script>
+</body>
+</html>
+
+</body>
+</html>
